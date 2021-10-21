@@ -33,7 +33,7 @@ pipeline {
     stages {
         stage('Slack it'){
             steps {
-                slackSend channel: '#demo_channel-jenkins', 
+                slackSend channel: 'demo_channel-jenkins', 
                           message: 'Hello, world'
             }
         }
