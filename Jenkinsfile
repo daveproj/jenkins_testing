@@ -18,6 +18,9 @@ node {
     stage('publish') {
       echo "uploading package...^^^.^^^......|..|..|..|..|..."
     }
+    stage("speak") {
+      slackSend color: '#BADA55', message: 'Hello, World!'
+    }
   } finally {
     stage('cleanup') {
       echo "doing some cleanup..."
